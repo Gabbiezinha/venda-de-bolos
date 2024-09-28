@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bolos da mãezona</title>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+<body>
+<div class="background">
+    <div class="container">
+        <h1 class="titulo-h1">Bolos da Mãezona</h1>
+        <div class="logo"></div>
+    </div>
+</div>
+
+<div class="categories-container">
+    <div class="categories">
+        <a href="#">BOLOS</a>
+        <a href="#">TORTAS DOCES</a>
+        <a href="#">TORTAS SALGADAS</a>
+        <a href="#">BEBIDAS</a>
+    </div>
+</div>
+
+<div id="modal-bolos" class="modal">
+    <div class="modal-content">
+        <!-- Conteúdo do modal para Bolos -->
+    </div>
+</div>
+
+<div id="modal-tortas-doces" class="modal">
+    <div class="modal-content">
+        <!-- Conteúdo do modal para Tortas Doces Deus nos ajude :´(   -->
+    </div>
+</div>
+
+<div id="modal-tortas-salgadas" class="modal">
+    <div class="modal-content">
+        <!-- Conteúdo do modal para Tortas Salgadas -->
+    </div>
+</div>
+
+<div id="modal-bebidas" class="modal">
+    <div class="modal-content">
+        <!-- Conteúdo do modal para Bebidas -->
+    </div>
+</div>
+
+<div class="container">
+    <div class="menu-container">
+        <h2>Bolos</h2>
+
+    <div class="menu-section" id="bolos-menu">
+
+        <div class="menu-item" onclick="openModal('bolos')">
+            <h3>Bolo P (15cm)</h3>
+            <img src="imagens/boloP.jpg">
+            <p>2 camadas de recheio, 15cm de diâmetro, 10cm de altura</p>
+        </div>
+        <div class="menu-item" onclick="openModal('bolos')">
+            <h3>Bolo M (20cm)</h3>
+            <img src="imagens/boloM.jpg">
+            <p>2 camadas de recheio, 20 cm de diâmetro e 10cm de altura</p>
+        </div>
+
+        <div class="menu-item" onclick="openModal('bolos')">
+            <h3>Bolo G (25cm)</h3>
+            <img src="imagens/boloG.jpg">
+            <p>2 camadas de recheio, 25 cm de diâmetro e 10cm de altura</p>
+        </div>
+    </div>
+</div>
+        <div class="menu-container">
+            <h2>TORTAS DOCES</h2>
+
+    <div class="menu-section" id="tortas-doces-menu">
+
+        <div class="menu-item" onclick="openModal('tortas-doces')">
+            <h3>Torta Doce P (20cm)</h3> <img src="imagens/tortadoceP.jpg">
+            <p>2 camadas de recheio, 20 cm de diâmetro e 10cm de altura</p>
+        </div>
+
+        <div class="menu-item" onclick="openModal('tortas-doces')">
+            <h3>Torta Doce M (25cm)</h3> <img src="imagens/tortadoceM.jpg">
+            <p>2 camadas de recheio, 25 cm de diâmetro e 10cm de altura</p>
+        </div>
+
+        <div class="menu-item" onclick="openModal('tortas-doces')">
+            <h3>Torta Doce G (30cm)</h3> <img src="imagens/tortadoceG.jpg">
+            <p>2 camadas de recheio, 30 cm de diâmetro e 10cm de altura</p>
+        </div>
+
+        <div class="menu-item" onclick="openModal('tortas-doces')">
+            <h3>Torta Doce GG (40cm)</h3> <img src="imagens/tortadoceGG.jpg">
+            <p>2 camadas de recheio, 30 cm de diâmetro e 10cm de altura</p>
+        </div>
+    </div>
+        <div class="menu-container">
+            <h2>TORTAS SALGADAS</h2>
+
+    <div class="menu-section" id="tortas-salgadas-menu">
+
+
+        <div class="menu-item" onclick="openModal('tortas-salgadas')">
+            <h3>Torta Familiar (25cm)</h3> <img src="imagens/tortasalgadaP.jpg">
+            <p>Delicie-se com nossa torta familiar, perfeita para compartilhar momentos especiais com a família.</p>
+        </div>
+
+        <div class="menu-item" onclick="openModal('tortas-salgadas')">
+            <h3>Torta Média (30cm)</h3> <img src="imagens/tortasalgadaM.jpg">
+            <p>Nossa torta média é ideal para encontros íntimos e celebrações entre amigos.</p>
+        </div>
+
+        <div class="menu-item" onclick="openModal('tortas-salgadas')">
+            <h3>Torta Grande (35cm)</h3> <img src="imagens/tortasalgadaG.jpg">
+            <p>Prepare-se para uma festa de sabores com nossa torta grande. Feita para impressionar, cada fatia é nova experiência</p>
+        </div>
+
+        <div class="menu-item" onclick="openModal('tortas-salgadas')">
+            <h3>Torta Extra-Grande (40cm)</h3> <img src="imagens/tortasalgadaGG.jpg">
+            <p>Para os verdadeiros apreciadores de torta a versão extra-grande é uma verdadeira experiência</p>
+        </div>
+    </div>
+    <div class="menu-container">
+        <h2>BEBIDAS</h2> <br>
+
+    <div class="menu-section" id="bebidas-menu">
+
+        <div class="menu-item" onclick="openModal('bebidas')"> 
+            <h3>GUARANÁ ANTARCTICA LATA 350ML</h3> <img src="imagens/guarana lata.jpg">
+        </div>
+
+        <div class="menu-item" onclick="openModal('bebidas')">
+            <h3>FANTA LARANJA LATA 350ML</h3> <img src="imagens/fanta lata.jpg">
+        </div>
+
+        <div class="menu-item" onclick="openModal('bebidas')">
+            <h3>COCA-COLA 2L</h3> <img src="imagens/guarana 2L.jpg">
+        </div>
+
+        <div class="menu-item" onclick="openModal('bebidas')">
+            <h3>GUARANÁ ANTARCTICA 2L</h3> <img src="imagens/coca cola 2L.jpg">
+        </div>
+
+        <div class="menu-item" onclick="openModal('bebidas')">
+            <h3>COCA-COLA LATA 350 ML</h3> <img src="imagens/coca cola lata.jpg">
+        </div>
+    </div>
+</div>
+
+<script>
+    function openModal(category) {
+        var modal = document.getElementById('modal-' + category);
+        modal.style.display = 'block';
+    }
+</script>
+
+</body>
+</html>
